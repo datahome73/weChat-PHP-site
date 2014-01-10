@@ -1,4 +1,5 @@
 weChat-PHP-site
 ===============
 
-weChat-PHP-site 
+初始版本
+使用gitHub来管理代码，将各种修改记录。便于开发过程监控。
