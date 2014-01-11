@@ -14,20 +14,22 @@
 // 检测PHP环境
 if(version_compare(PHP_VERSION,'5.3.0','<'))  die('require PHP > 5.3.0 !');
 
-// 定义应用目录
-define('APP_PATH','./Application/');
-
 //关闭目录安全文件的生成
 define('BUILD_DIR_SECURE', false);
 
 // 开启调试模式
 define('APP_DEBUG',TRUE); 
 
-/**
- * 缓存目录设置
- * 此目录必须可写，建议移动到非WEB目录
- */
+///////////////////////////////////////////
+//  缓存目录设置
+//  此目录必须可写，建议移动到非WEB目录
+////////////////////////////////////////
 define ( 'RUNTIME_PATH', './Runtime/' );
+
+
+
+// 定义应用目录
+define('APP_PATH','./Application/');
 
 // 引入ThinkPHP入口文件
 require './ThinkPHP/ThinkPHP.php';
