@@ -40,13 +40,14 @@ return array(
 	//微信的 TOKEN
 	'WE_CHAT_TOKEN'=>'你的', //填写你设定的 token 
 	
+	//BAE3.0
 	//数据库配置信息
-	'DB_TYPE'   => 'mysqli', // 数据库类型
-	'DB_HOST'   => 'localhost', // 服务器地址
-	'DB_NAME'   => 'think', // 数据库名
-	'DB_USER'   => 'root', // 用户名
-	'DB_PWD'    => '', // 密码
-	'DB_PORT'   => 3306, // 端口
+	'DB_TYPE'   => 'mysql', // 数据库类型
+	'DB_HOST'   => 'sqld.duapp.com', // 服务器地址
+	'DB_NAME'   => '你的', // 数据库名
+	'DB_USER'   => '你的', // 用户名
+	'DB_PWD'    => '你的', // 密码
+	'DB_PORT'   => 4050, // 端口
 	'DB_PREFIX' => 'think_', // 数据库表前缀 
 	
 

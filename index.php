@@ -14,11 +14,15 @@
 // 检测PHP环境
 if(version_compare(PHP_VERSION,'5.3.0','<'))  die('require PHP > 5.3.0 !');
 
-//关闭目录安全文件的生成
-define('BUILD_DIR_SECURE', false);
-
 // 开启调试模式
 define('APP_DEBUG',TRUE); 
+
+//不设定的话，应用模式是普通模式（common）
+// 定义 应用模式为SAE（用于支持SAE平台）
+//define('APP_MODE','sae');
+
+// 定义 应用模式为BAE（用于支持BAE平台）
+//define('APP_MODE','bae');
 
 ///////////////////////////////////////////
 //  缓存目录设置
@@ -26,7 +30,11 @@ define('APP_DEBUG',TRUE);
 ////////////////////////////////////////
 define ( 'RUNTIME_PATH', './Runtime/' );
 
+//定义公共模块的目录，放到应用目录外
+define('COMMON_PATH','./Common/');
 
+//关闭目录安全文件的生成
+define('BUILD_DIR_SECURE', false);
 
 // 定义应用目录
 define('APP_PATH','./Application/');
